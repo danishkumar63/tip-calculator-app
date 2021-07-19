@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <!-- displays site properly based on user's device -->
+  
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Tip calculator app</title>
+</head>
+<body>
+
+  <div class="content">
+    
+    <img class="logo-img" src="./images/logo.svg" alt="Logo">
+
+    <section class="calculator">
+
+      <div class="calc__left">
+
+        <div class="input-group">
+          <label for="bill">Bill</label>
+          <img src="./images/icon-dollar.svg" class="input__icon">
+          <input type="number" value="0" class="input-control padding-left-input" id="billInput">
+        </div>
+
+        <section class="tip-selector">
+          
+          <h3 class="heading-3">
+            Select Tip %
+          </h3>
+
+          <div class="tip-row">
+            <div>
+              <button class="btn btn-alt" id="b5">5%</button>
+            </div>
+            <div>
+              <button class="btn btn-alt" id="b10">10%</button>
+            </div>
+            <div>
+              <button class="btn btn-alt" id="b15">15%</button>
+            </div>
+            <div>
+              <button class="btn btn-alt" id="b25">25%</button>
+            </div>
+            <div>
+              <button class="btn btn-alt" id="b50">50%</button>
+            </div>
+            <div>
+              <input type="number" id="customInput" placeholder="Custom" class="input-control padding-small-input" id="bill">
+            </div>
+          </div>
+        </section>
+        
+
+        <div class="input-group">
+          <label for="bill">Number of People</label>
+          <div id="error-label">Can't be zero</div>
+          <img src="./images/icon-person.svg" class="input__icon">
+          <input type="number" value="0" class="input-control padding-left-input" id="peopleInput">
+        </div>
+
+      </div>
+      
+      <div class="calc__right">
+        
+        <div class="amount-row">
+          <div class="amount-row-left">
+            <h3>Tip Amount</h3>
+            <p>/ person</p>
+          </div>
+          <div class="amount-row-right">
+            <h2 id="tipAmount">
+              $0.00
+            </h2>
+          </div>
+        </div>
+
+        <div class="amount-row">
+          <div class="amount-row-left">
+            <h3>Total</h3>
+            <p>/ person</p>
+          </div>
+          <div class="amount-row-right">
+            <h2 id="totalAmount">
+              $0.00
+            </h2>
+          </div>
+        </div>
+
+        <button class="btn margin-top" id="reset-button" disabled>
+          RESET
+        </button>
+
+      </div>
+
+    </section>
+
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Danish Kumar</a>.
+  </div>
+
+</body>
+
+<script src="./js/app.js"></script>
+
+</html>
